@@ -13,7 +13,7 @@
 
 __Nota:__ Éste proyecto tiene como finalidad el aprendizaje de ciberseguridad y hacking, no me hago responsable de un posible mal uso de ésta herramienta
 
-[Read this documentation in English](Doc/English.md)
+[Read this documentation in English](Doc/README.md)
 
 # Información Importante
 * __Fecha de documentación :__ `07/05/2020`
@@ -32,7 +32,7 @@ __Nota:__ Éste proyecto tiene como finalidad el aprendizaje de ciberseguridad y
 
 # Requerimientos de espacio de trabajo
 Librerías utilizadas
-* __import__ `os` <== API windows
+* __import__ `os`
 * __import__ `telepot`
 * __import__ `requests`
 * __import__ `image`
