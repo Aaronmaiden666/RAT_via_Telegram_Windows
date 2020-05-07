@@ -50,17 +50,75 @@ Librerías utilizadas
 * __import__ `logging`
 * __import__ `socket`
 * __import__ `select`
-* __import__ ``
-* __import__ ``
-* __import__ ``
-* __import__ ``
-* __import__ ``
-* __import__ ``
 
 
 
 # Caracteristicas
+## /apagar
+`Apaga la computadora de la victima`
+## /audio
+`Graba desde el microfono [Victima]`
 
+__Ejemplo:__
+````
+/audio [Tiempo en segundos]
+/audio 45
+````
+
+
+## /captura
+`Toma una captura de pantalla - [Victima]`
+## /cd
+`Navega entre carpetas - [Victima]`
+## /cmd_dns
+`Muestra la información desde la DNS - [Victima]`
+## /copiar 
+`Copia un archivos - [Victima]`
+## /descargar
+`Descarga un archivo - [Victima]`
+## /ejecutar
+`Ejecuta un EXE - [Victima]`
+## /eliminar
+`Elimina un archivo o carpeta - [Victima]`
+## /enviar
+`Envía archivos de nuestra PC o celular a la [Victima]`
+````r
+/enviar "C:/Users/DonaldTrump/Desktop/porn.jpg" "C:/Users/DonaldTrump/AppData/Roaming/Microsoft Windows/pornography.jpg"
+````
+
+## /fondo
+`Cambia fondo de pantalla - [Victima]`
+
+__Ejemplo:__
+
+/fondo  ` C:/Users/User/Desktop/porn.jpg`
+## /get_chrome
+`Obtiene las contraseñas guardadas en Chrome - [Victima]`
+## /get_key
+`Obtiene el registro de teclas - [Victima]`
+## /ip_info
+`Obtiene la información desde la IP [Victima]`
+## /mover
+`Mueve archivos - [Victima]`
+## /proxy
+`Crea  - [Victima]`
+## /red_info
+`Muestra información de la red- [Victima]`
+## /reiniciar
+`Reinicia el RAT - [Victima]`
+## /tareas
+`Muestra información de procesos  - [Victima]`
+
+![dsf](https://i.imgur.com/miav5Y8.png)
+
+## /test
+`Verifica si la [Victima] se encuentra en linea`
+## /this
+`Muestra la ruta donde se encuentra el RAT`
+## /web
+`Abre un URL en el navegador predeterminado de `
+## /webcam
+`Graba o toma foto de la webcam`
 # instalación:
 ## Conversión de `*.py a *.exe`:
 ## Método de infección:

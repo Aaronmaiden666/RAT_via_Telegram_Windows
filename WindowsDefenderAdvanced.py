@@ -568,27 +568,27 @@ def handle(msg):
                     functionalities = {'/red_info': '       => Información de la Red',\
                                        '/webcam': '       => Toma foto a la WebCam',\
                                        '/captura': '       => ',\
-                                       '/cmd': '       => Ejecuta desde Consola ',\
+                                       #'/cmd': '       => Ejecuta desde Consola ',\
                                        '/ir': '       => Navega entre carpetas',\
                                        '/eliminar': '       => Elimina archivo o carpeta',\
                                        '/eliminar_key':'       => Elimina el archivo Keylogger',\
                                        '/cmd_dns': '       => Muestra información DNS',\
-                                       '/cmd_ipconfig':'       => Muestra información IP Config',\
+                                       #'/cmd_ipconfig':'       => Muestra información IP Config',\
                                        '/descargar': '       => Descarga un archivo',\
                                        '/copiar': '       => Copiar archivos, de la misma PC',\
                                        '/mover': '       => Mueve archivos',\
-                                       '/block_key': '       => Bloquea el Teclado',\
-                                       '/block_mouse': '       => Bloquea el movimiento del Mouse',\
-                                       '/desblock_mouse': '       => Desbloquear movimiento del mouse',\
+                                       #'/block_key': '       => Bloquea el Teclado',\
+                                       #'/block_mouse': '       => Bloquea el movimiento del Mouse',\
+                                       #'/desblock_mouse': '       => Desbloquear movimiento del mouse',\
                                        '/get_chrome': '       => Obtener contraseñas de chrome',\
-                                       '/get_wifi': '       => Obtener contraseñas de Wifi',\
+                                       #'/get_wifi': '       => Obtener contraseñas de Wifi',\
                                        '/get_key':'       => Obtiene el registro de teclas',\
-                                       '/get_documents':'       => Obtiene Documentos del Usuario',\
-                                       '/get_music':'       => Obtiene Musica del Usuario',\
-                                       '/get_videos':'       => Obtiene Videos del Usuario',\
-                                       '/get_pictures':'       => Obtiene Photos del Usuario',\
-                                       '/get_download':'       => Obtiene Descargas del Usuario',\
-                                       '/get_desktop':'       => Obtiene Escritorio del Usuario',\
+                                       #'/get_documents':'       => Obtiene Documentos del Usuario',\
+                                       #'/get_music':'       => Obtiene Musica del Usuario',\
+                                       #'/get_videos':'       => Obtiene Videos del Usuario',\
+                                       #'/get_pictures':'       => Obtiene Photos del Usuario',\
+                                       #'/get_download':'       => Obtiene Descargas del Usuario',\
+                                       #'/get_desktop':'       => Obtiene Escritorio del Usuario',\
                                        '/audio': '       => [tiempo en segundos, default=5s]',\
                                        '/ip_info': '       => Obtener información de IP',\
                                        '/test': '       => Verifica si la victima está en linea',\
@@ -598,13 +598,13 @@ def handle(msg):
                                        '/listar': '       =>  Muestra directorio actual RAT',\
                                        '/reiniciar': '       => Reinicia la computadora',\
                                        '/ejecutar': '       => Ejecuta un archivo *EXE',\
-                                       '/calendario': '       => Modifica el calendario',\
-                                       '/auto_destruye': '       => Se destruye RAT',\
+                                       #'/calendario': '       => Modifica el calendario',\
+                                       #'/auto_destruye': '       => Se destruye RAT',\
                                        '/apagar': '       => Apaga la computadora',\
-                                       '/destruir': '       => Destruye el RAT',\
+                                       #'/destruir': '       => Destruye el RAT',\
                                        '/tareas': '       => Lista de Tareas',\
                                        '/enviar': '       => Envia Archivos a la PC de la victima',\
-                                       '/actualizar': '       => Actualiza la carpeta',\
+                                       #'/actualizar': '       => Actualiza la carpeta',\
                                        '/fondo': '       => Cambia de fondo de pantalla'}
                     response = "\n".join(command + ' ' + description for command, description in sorted(functionalities.items()))
                 else:  # redirect to /help
