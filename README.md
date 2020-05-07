@@ -33,6 +33,32 @@ __Nota:__ Éste proyecto tiene como finalidad el aprendizaje de ciberseguridad y
 # Requerimientos de espacio de trabajo
 Librerías utilizadas
 * __import__ `os` <== API windows
+* __import__ `telepot`
+* __import__ `requests`
+* __import__ `image`
+* __import__ `winshell`
+* __import__ `tendo`
+* __import__ `pypiwin32`
+* __import__ `pyinstaller`
+* __import__ `psutil`
+* __import__ `pillow`
+* __import__ `opencv-python`
+* __import__ `sys`
+* __import__ `threading`
+* __import__ `datetime`
+* __import__ `argparse`
+* __import__ `logging`
+* __import__ `socket`
+* __import__ `select`
+* __import__ ``
+* __import__ ``
+* __import__ ``
+* __import__ ``
+* __import__ ``
+* __import__ ``
+
+
+
 # Caracteristicas
 
 # instalación:

