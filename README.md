@@ -206,35 +206,63 @@ Se está trabajando en las siguientes caracteristicas y se iran habilitando en l
 __Nota:__ Si usted desea puede descargar el entorno virtual de python 3.7 con todas las librerías instaladas y usadas en éste proyecto [_aquí_](https://jxjjxy-my.sharepoint.com/:f:/g/personal/ztjr_7ee_t_odmail_cn/EmlA_2f55ZxPoJh8yPMkvD4BrUNI0rJfjaPBrZP-84sCQw?e=kHqqgE)
 
 * Editar el archivo `WindowsDefenderAdvanced.py`
-![Archivo Windows defender advances troyano](https://i.imgur.com/5F3hN97.png)
-* Creamos en GotFather un Bot y obtenemos nuestro token
-* Entramos y agregamos nuestro token del bot 
-![agregar ](https://i.imgur.com/2QEyPfg.png)
+  
+  ![Archivo Windows defender advances troyano](https://i.imgur.com/5F3hN97.png)
+
+* Creamos en [BotFather](https://telegram.me/BotFather) un Bot 
+
+  ![botFather](https://i.imgur.com/mWzDXRU.png)
+
+* Obtenemos nuetro token 
+
+  ![](https://i.imgur.com/OBbDYVj.png)
+
+* Entramos y agregamos nuestro token del bot
+
+  ![agregar ](https://i.imgur.com/2QEyPfg.png)
+
 * lo que sigue despues es obtener el ID de nuestro chat, pero para eso necesitamos ua ejecutar nuestro RAT.
 * Para ejecutarlo, busque el archivo `Ejecutar.bat` => Y le damos a editar.
-![Ejecutar.bat](https://i.imgur.com/IO15FFn.png)
+
+  ![Ejecutar.bat](https://i.imgur.com/IO15FFn.png)
+
 * He insertamos la ruta donde se encuentra nuestro RAT
-![ejecutar.bat data](https://i.imgur.com/IErOgU2.png)
+  
+  ![ejecutar.bat data](https://i.imgur.com/IErOgU2.png)
+
 * Una vez terminado ya podemos ejecutar nuestro RAT y en la consola se verá algo así.
-![](https://i.imgur.com/oxKZHcm.png)
+
+  ![](https://i.imgur.com/oxKZHcm.png)
+
 * Y en nuestro telegram tenemos que mandar un comando, para recibir nuestro ID del chat
-![](https://i.imgur.com/TbX0swa.png)
+
+  ![](https://i.imgur.com/TbX0swa.png)
+
 * Y en nuestra consola aparecerá nuestro ID del chat
-![chat id](https://i.imgur.com/3GEs4g2.png)
+
+  ![chat id](https://i.imgur.com/3GEs4g2.png)
+
 * Y este chat ID tenemos que escribirlo en el archivo `WindowsDefenderAdvanced.py`
 
-![](https://i.imgur.com/psqD3sj.png)
+  ![](https://i.imgur.com/psqD3sj.png)
+
 * Y listo, ahora nuestro RAT solo responderá a nuestro ID privado, nadie más podrá tener ese acceso. ya está listo para compilar.
 
 
 ## Conversión de `*.py a *.exe`:
 * Busque el archivo `Compilar.bat`
-![Compilar.bat](https://i.imgur.com/bM9qBQg.png)
+
+  ![Compilar.bat](https://i.imgur.com/bM9qBQg.png)
+
 * => Clic derecho => Editar 
-![Compilar.bat código](https://i.imgur.com/upyuCW8.png)
+
+  ![Compilar.bat código](https://i.imgur.com/upyuCW8.png)
+
 Y colocamos la ruta de la carpeta donde se encuentra el RAT
 * => Guardamos => Ejecutamos para compilar...
-![](https://i.imgur.com/fj0Bzri.png)
+
+  ![](https://i.imgur.com/fj0Bzri.png)
+  
 * Listo, el RAT se compiló exitosamente.
 
 
