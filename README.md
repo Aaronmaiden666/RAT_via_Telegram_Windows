@@ -56,7 +56,7 @@ __Librerías utilizadas__
 
 
 
-# Caracteristicas
+# Funcionalidades
 ## /apagar
 `Apaga la computadora de la victima`
 ## /audio
@@ -78,8 +78,18 @@ __Ejemplo:__
 ````
 /ir [Ruta entre comillas dobles y debe terminar con un "\"]
 
-/ir "D:\SoftwarePortable\Android Studio\plugins\android\resources\installer\arm64-v8a\"
+/ir "D:\SoftwarePortable\Android Studio\"
 ````
+## /listar
+`Muestra la lista de archivos que se encuentran en una carpeta - [Victima]`
+
+__Ejemplo:__
+````
+/listar [Ruta entre comillas dobles y debe terminar con un "\"]
+
+/listar "D:\SoftwarePortable\Android Studio\plugins\"
+````
+
 ## /cmd_dns
 `Muestra la información desde la DNS - [Victima]`
 ## /copiar 
@@ -183,7 +193,7 @@ __Ejemplo:__
 ## /webcam
 `Graba o toma foto de la webcam`
 
-__NOTA:__`  No probado, tamboco sé si la luz de la webCam se enciende.`
+__NOTA:__`  No probado, tampoco sé si la luz de la webCam se enciende.`
 ___
 ___
 # instalación:
@@ -191,23 +201,24 @@ ___
 __Nota:__ Si usted desea puede descargar el entorno virtual de python 3.7 con todas las librerías instaladas y usadas en éste proyecto [_aquí_](https://jxjjxy-my.sharepoint.com/:f:/g/personal/ztjr_7ee_t_odmail_cn/EmlA_2f55ZxPoJh8yPMkvD4BrUNI0rJfjaPBrZP-84sCQw?e=kHqqgE)
 
 ## Conversión de `*.py a *.exe`:
+
+
+
+
 ## Método de infección:
 ___¿Cómo infecto a la victima?___
 
-![Final files](https://i.imgur.com/7GJz3De.png)
+![Final files](https://i.imgur.com/lGjXUlC.png)
 - Usten tendrá al finalizar 2 archivos:
-- El archivo llamado `WindowsDefender.exe` es el keylogger.
-- El archivo llamado , modifica el registro de windows, y hace que el keylogger se ejecute siempre al iniciar el usuario.
-___
-___
+- El archivo llamado `WindowsDefenderAdvanced.exe` que es el RAT
+- El archivo llamado `StartUp.reg`, modifica el registro de windows, y hace que el `RAT`se ejecute siempre al iniciar el usuario.
 
-# Procedimiento de infección:
 __Nota:__ No cambiar de nombre al archivo `WindowsDefenderAdvanced.exe`, si usted le cambia de nombre, algunas funcionalidades , como la del troyano no se iniciarán.
 - Usten guardará esos archivos en un USB
 - Es necesario desactivar el antivirus o agregar una exclusión en al siguiente ruta: `"C:\Users\Public\Security\Windows Defender"`
-- Lo siguiente es ejecutar el archivo `WindowsDefender.exe` en el USB, el keylogger se replicará en la siguiente ruta `"C:\Users\Public\Security\Windows Defender"`, Se recomienda no sacar el USB al instante ya que el keylogger se estará replicando enla ruta.
+- Lo siguiente es ejecutar el archivo `WindowsDefenderAdvanced.exe` en el USB, el RAT se replicará en la siguiente ruta `"C:\Users\Public\Security\Windows Defender"`, Se recomienda no sacar el USB al instante ya que el keylogger se estará replicando en la ruta.
 - Lo siguiente es darle 2 click al archiv `StartUp.reg`, y ésto hará que el registro de windows sea modificado y el keylogger se ejecute 
-- __Nota:__ No hay un orden fijo, usted puede ejecutar primero el archivo `WindowsDefender.exe` cómo el archivo `StartUp.reg` y  ésto no causará ningún problema.
+- __Nota:__ No hay un orden fijo, usted puede ejecutar primero el archivo `WindowsDefenderAdvanced.exe` cómo el archivo `StartUp.reg` y  ésto no causará ningún problema.
 
 ___
 ___
