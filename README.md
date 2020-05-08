@@ -11,7 +11,8 @@
 [![Made with Python](https://img.shields.io/badge/Made%20with-Python-3572A5.svg)](https://github.com/SebastianEPH)
 
 
-__Nota:__ Éste proyecto tiene como finalidad el aprendizaje de ciberseguridad y hacking, no me hago responsable de un posible mal uso de ésta herramienta
+__Nota:__ Éste proyecto tiene como finalidad el aprendizaje de ciberseguridad y hacking, no me hago responsable de un posible mal uso de ésta herramienta. 
+
 
 [Read this documentation in English](Doc/README.md)
 
@@ -20,6 +21,7 @@ __Nota:__ Éste proyecto tiene como finalidad el aprendizaje de ciberseguridad y
 * __Versión:__ v`1.0.0`
 * __Peso compilado:__ `45MB` aproximadamente
 * __Versión Python:__ `3.7` (Obligatoriamente debe ser ésta versión)
+* __Licencia:__ `MIT licence`
 
 ## Archivos del repositorio - Github 
 ![Archivos](https://i.imgur.com/G57rYkC.png)
@@ -56,9 +58,9 @@ __Librerías utilizadas__
 
 # Funcionalidades
 ## /apagar
-`Apaga la computadora de la victima`
+`Apaga la computadora de la [PC Infectada]`
 ## /audio
-`Graba desde el microfono [Victima]`
+`Graba desde el microfono de la [PC Infectada]`
 
 __Ejemplo:__
 ````
@@ -68,9 +70,9 @@ __Ejemplo:__
 
 
 ## /captura
-`Toma una captura de pantalla - [Victima]`
+`Toma una captura de pantalla - [PC Infectada]`
 ## /ir
-`Navega entre carpetas - [Victima]`
+`Navega entre carpetas - [PC Infectada]`
 
 __Ejemplo:__
 ````
@@ -79,7 +81,7 @@ __Ejemplo:__
 /ir "D:\SoftwarePortable\Android Studio\"
 ````
 ## /listar
-`Muestra la lista de archivos que se encuentran en una carpeta - [Victima]`
+`Muestra la lista de archivos que se encuentran en una carpeta - [PC Infectada]`
 
 __Ejemplo:__
 ````
@@ -89,9 +91,9 @@ __Ejemplo:__
 ````
 
 ## /cmd_dns
-`Muestra la información desde la DNS - [Victima]`
+`Muestra la información desde la DNS - [PC Infectada]`
 ## /copiar 
-`Copia un archivo de una carpeta a otra - [Victima]`
+`Copia un archivo de una carpeta a otra - [PC Infectada]`
 
 __Ejemplo:__
 ````
@@ -101,7 +103,7 @@ __Ejemplo:__
 ````
 
 ## /descargar
-`Descarga un archivo - [Victima]`
+`Descarga un archivo - [PC Infectada]`
 
 __Ejemplo:__
 ````
@@ -111,7 +113,7 @@ __Ejemplo:__
 ````
 
 ## /ejecutar
-`Ejecuta un EXE - [Victima]`
+`Ejecuta un EXE - [PC Infectada]`
 
 __Ejemplo:__
 ````
@@ -120,7 +122,7 @@ __Ejemplo:__
 /ejecutar "C:\Users\Public\virus.exe"
 ````
 ## /eliminar
-`Elimina un archivo o carpeta - [Victima]`
+`Elimina un archivo o carpeta - [PC Infectada]`
 
 __Ejemplo:__
 ````
@@ -130,7 +132,7 @@ __Ejemplo:__
 /eliminar "D:\Photos\FotosFamilia\03122019.jpg"
 ````
 ## /enviar
-`Envía archivos de nuestra PC o celular a la [Victima]`
+`Envía archivos de nuestra PC o celular a la [PC Infectada]`
 
 __Ejemplo:__
 ````
@@ -140,7 +142,7 @@ __Ejemplo:__
 ````
 
 ## /fondo
-`Cambia fondo de pantalla - [Victima]`
+`Cambia fondo de pantalla - [PC Infectada]`
 
 __Ejemplo:__
 
@@ -148,13 +150,13 @@ __Ejemplo:__
 /fondo   C:/Users/User/Desktop/porn.jpg
 ````
 ## /get_chrome
-`Obtiene las contraseñas guardadas en Chrome - [Victima]`
+`Obtiene las contraseñas guardadas en Chrome - [PC Infectada]`
 ## /get_key
-`Obtiene el registro de teclas - [Victima]`
+`Obtiene el registro de teclas - [PC Infectada]`
 ## /ip_info
-`Obtiene la información desde la IP [Victima]`
+`Obtiene la información desde la IP [PC Infectada]`
 ## /mover
-`Mueve archivos - [Victima]`
+`Mueve archivos - [PC Infectada]`
 
 __Ejemplo:__
 ````
@@ -164,20 +166,20 @@ __Ejemplo:__
 ````
 
 ## /proxy
-`Crea  - [Victima]`
+`Crea  - [PC Infectada]`
 
 `Creo que abre un puerto a la victima. <= por verificar`
 ## /red_info
-`Muestra información de la red- [Victima]`
+`Muestra información de la red- [PC Infectada]`
 ## /reiniciar
-`Reinicia la computadora - [Victima]`
+`Reinicia la computadora - [PC Infectada]`
 ## /tareas
-`Muestra información de procesos  - [Victima]`
+`Muestra información de procesos  - [PC Infectada]`
 
 ![dsf](https://i.imgur.com/miav5Y8.png)
 
 ## /test
-`Verifica si la [Victima] se encuentra en linea`
+`Verifica si la [PC Infectada] se encuentra en linea`
 ## /this
 `Muestra la ruta donde se encuentra el RAT`
 ## /web
