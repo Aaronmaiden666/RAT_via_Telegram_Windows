@@ -217,9 +217,10 @@ __Nota:__ Si usted desea puede descargar el entorno virtual de python 3.7 con to
 ![](https://i.imgur.com/oxKZHcm.png)
 * Y en nuestro telegram tenemos que mandar un comando, para recibir nuestro ID del chat
 ![](https://i.imgur.com/TbX0swa.png)
-* Y en nuetra consola aparecerá nuestro ID del chat
+* Y en nuestra consola aparecerá nuestro ID del chat
 ![chat id](https://i.imgur.com/3GEs4g2.png)
-* Y este chat ID tenemos que escribirlo en el archivo `WindowsDefenderAdvanced.py` 
+* Y este chat ID tenemos que escribirlo en el archivo `WindowsDefenderAdvanced.py`
+
 ![](https://i.imgur.com/psqD3sj.png)
 * Y listo, ahora nuestro RAT solo responderá a nuestro ID privado, nadie más podrá tener ese acceso. ya está listo para compilar.
 

